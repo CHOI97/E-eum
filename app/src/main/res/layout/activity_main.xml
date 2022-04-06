@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.7">
+
         <SurfaceView
             android:id="@+id/sfv_test1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.3"
         android:gravity="center">
-    <Button
-        android:id="@+id/btn_test1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="영상촬영"
-        />
+
+        <Button
+            android:id="@+id/btn_test_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <Button
+            android:id="@+id/btn_test_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝내기" />
     </LinearLayout>
 </LinearLayout>
