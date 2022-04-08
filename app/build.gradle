@@ -5,7 +5,9 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdk 31
-
+    buildFeatures {
+        viewBinding true
+    }
     defaultConfig {
         applicationId "com.cookandroid.e_eum"
         minSdk 29
@@ -26,6 +28,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -38,6 +44,21 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    def camerax_version = '1.1.0-beta01'
+    implementation "androidx.camera:camera-core:$camerax_version"
+
+    // CameraX Camera2 extensions
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+
+    // CameraX Lifecycle library
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+
+    // CameraX View class
+    implementation "androidx.camera:camera-view:$camerax_version"
+
+
+
 }
 repositories {
 }
