@@ -22,15 +22,16 @@ import android.content.ContentValues
 import android.os.Build
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.Preview
-import com.cookandroid.e_eum.databinding.ActivityMainBinding
+
+import com.cookandroid.e_eum.databinding.CameraMainBinding
 import java.io.File
 
-class MainActivity : AppCompatActivity() {
+class CameraActivity : AppCompatActivity() {
 
     //  이미지캡처 x
 //      private var imageCapture: ImageCapture? = null
 
-    private lateinit var viewbinding: ActivityMainBinding
+    private lateinit var viewbinding: CameraMainBinding
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor: ExecutorService
 
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewbinding = ActivityMainBinding.inflate(layoutInflater)
+        viewbinding = CameraMainBinding.inflate(layoutInflater)
         setContentView(viewbinding.root)
 
         //퍼미션 권한설정
@@ -148,7 +149,7 @@ class MainActivity : AppCompatActivity() {
             .prepareRecording(this, mediaStoreOutputOptions)
             .apply {
                 if (PermissionChecker.checkSelfPermission(
-                        this@MainActivity,
+                        this@CameraActivity,
                         Manifest.permission.RECORD_AUDIO
                     ) ==
                     PermissionChecker.PERMISSION_GRANTED
