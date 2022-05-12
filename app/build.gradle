@@ -8,6 +8,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+
     defaultConfig {
         applicationId "com.cookandroid.e_eum"
         minSdk 29
@@ -47,7 +48,7 @@ dependencies {
 
 //view pager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
-    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'me.relex:circleindicator:2.1.6'
 
 //camerax
     def camerax_version = "1.1.0-beta01"
