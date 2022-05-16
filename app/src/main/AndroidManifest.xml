@@ -24,7 +24,14 @@
         android:theme="@style/Theme.Eeum"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".testActivity"
+            android:name=".DetailedMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ContentMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,12 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CameraActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".DicActivitiy"
-            android:exported="true"></activity>
     </application>
 
 </manifest>

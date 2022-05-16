@@ -1,4 +1,4 @@
-package com.cookandroid.e_eum
+package com.cookandroid.e_eum.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,6 +22,7 @@ import android.content.ContentValues
 import android.os.Build
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.Preview
+import com.cookandroid.e_eum.R
 
 import com.cookandroid.e_eum.databinding.CameraMainBinding
 import java.io.File

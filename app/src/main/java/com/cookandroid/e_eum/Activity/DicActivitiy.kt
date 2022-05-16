@@ -1,4 +1,4 @@
-package com.cookandroid.e_eum
+package com.cookandroid.e_eum.Activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

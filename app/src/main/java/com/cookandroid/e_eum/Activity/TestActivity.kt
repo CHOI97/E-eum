@@ -1,4 +1,4 @@
-package com.cookandroid.e_eum
+package com.cookandroid.e_eum.Activity
 
 import android.net.Uri
 import android.os.Bundle
@@ -13,7 +13,7 @@ import javax.net.ssl.*
 import javax.security.cert.CertificateException
 
 
-class testActivity : AppCompatActivity() {
+class TestActivity : AppCompatActivity() {
     private lateinit var viewbinding: TestLayoutBinding
     private var VIDEO_URL = "http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191029/632426/MOV000241430_700X466.mp4"
     override fun onCreate(savedInstanceState: Bundle?) {

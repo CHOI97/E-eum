@@ -1,9 +1,9 @@
-package com.cookandroid.e_eum
+package com.cookandroid.e_eum.Activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.cookandroid.e_eum.Activity.CameraActivity
 import com.cookandroid.e_eum.databinding.HomeBinding
 
 class HomeActivity : AppCompatActivity() {

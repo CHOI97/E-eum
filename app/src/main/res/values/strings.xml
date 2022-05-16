@@ -3,4 +3,39 @@
     <string name="take_photo">Take Photo</string>
     <string name="start_capture">시작</string>
     <string name="stop_capture">끝</string>
+
+
+
+<!--    수화    -->
+    <string name="explain_a">
+       얼굴 앞에서 오므렸던 오른손을 얼굴 쪽으로 끌어들이며 편다.
+    </string>
+    <string name="explain_b">
+       오므린 두 손을 손등이 밖으로 향하게 하여 얼굴 앞에 나란히 세웠다가 두 팔이 ‘X’자로 교차하게 한다.
+    </string>
+    <string name="explain_c">
+       두 손 각각 손가락을 모아 붙여 끝이 옆으로 향하게 하여 5지 등을 배에 대고 1·2·3·4지를 동시에 뗀다.
+    </string>
+    <string name="explain_d">
+       오른손의 손가락을 모아 끝이 안으로 향하게 하여 눈앞에서 왼쪽으로 두 바퀴 돌린다.
+    </string>
+    <string name="explain_e">
+       오른손의 손끝을 입 가까이에 대고 가볍게 움직이며 바람을 내쉰다.
+    </string>
+    <string name="explain_f">
+       손끝이 오른쪽으로 향하게 세운 왼손의 1·5지 사이에 손끝이 아래로 향하게 편 오른손을 넣는다.
+    </string>
+    <string name="explain_g">
+      손끝을 모은 두 손을 상하로 두 번 마주 댔다 떼며 아래로 내린다.
+    </string>
+    <string name="explain_h">
+       손가락 끝을 모아 쥔 오른손의 손끝을 입술에 댄 다음, 손가락 등이 위로 향하게 손끝을 모아 쥔 두 손의 손끝을 맞댄다.
+    </string>
+    <string name="explain_i">
+       1·5지 끝을 맞대어 동그라미를 만든 두 주먹을, 오른 주먹이 위에 놓이게 배에 대고 오른 주먹을 위로 올린다.
+
+    </string>
+    <string name="explain_j">
+       오른 주먹의 1·5지를 펴서 붙여 오른쪽 눈앞에서 뗀다.
+    </string>
 </resources>
