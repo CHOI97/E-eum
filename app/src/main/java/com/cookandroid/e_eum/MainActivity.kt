@@ -2,11 +2,14 @@ package com.cookandroid.e_eum
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.cookandroid.e_eum.R
+import com.cookandroid.e_eum.databinding.ActivityTodayResultBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var viewbinding : ActivityTodayResultBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        viewbinding = ActivityTodayResultBinding.inflate(layoutInflater)
+        setContentView(viewbinding.root)
+
     }
 }

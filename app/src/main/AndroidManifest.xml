@@ -25,13 +25,16 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".DetailedMainActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".VideoActivity"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
 
         <activity
-            android:name=".ContentMainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

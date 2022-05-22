@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
+//사전
 class ContentMainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView

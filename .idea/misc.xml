@@ -7,8 +7,16 @@
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.257" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/Home_main.xml" value="0.1466565349544073" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activitiy_main.xml" value="0.2640625" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic.xml" value="0.2828125" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic_main.xml" value="0.2828125" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic_result.xml" value="0.2828125" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_news.xml" value="0.2828125" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_result.xml" value="0.2640625" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_title.xml" value="0.2828125" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_today.xml" value="0.2828125" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_today_result.xml" value="0.2828125" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_trans_result.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_video.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/ca.xml" value="0.3015625" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/camera_main.xml" value="0.1" />
@@ -19,6 +27,7 @@
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/each_main.xml" value="0.27708333333333335" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/home.xml" value="0.33" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/layout.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/row_news.xml" value="0.2828125" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/test_layout.xml" value="0.3015625" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/menu/bottom_menu.xml" value="0.2828125" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/menu/menu_selector_color.xml" value="0.2828125" />
