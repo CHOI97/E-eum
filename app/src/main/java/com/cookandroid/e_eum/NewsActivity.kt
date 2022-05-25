@@ -13,7 +13,7 @@ internal class NewsActivity : AppCompatActivity() {
     private val myDataset = arrayOf("1", "2")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dic)
+        setContentView(R.layout.activity_dic_main)
         recyclerView = findViewById<View>(R.id.my_recycler_view) as RecyclerView
 
         // use this setting to improve performance if you know that changes

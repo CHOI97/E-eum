@@ -27,14 +27,14 @@
             android:name=".DetailedMainActivity"
             android:exported="true" />
         <activity
-            android:name=".VideoActivity"
+            android:name=".NewsActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TodayActivity"
             android:exported="true" />
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

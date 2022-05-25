@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.cookandroid.e_eum.databinding.ActivityTodayResultBinding
 
-class MainActivity : AppCompatActivity() {
+class TodayActivity : AppCompatActivity() {
     private lateinit var viewbinding : ActivityTodayResultBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
