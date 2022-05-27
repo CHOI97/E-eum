@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class VideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_video)
+        setContentView(R.layout.activity_dic_result)
 
         val videoText : TextView = findViewById(R.id.title_image)
         val videoText2 : TextView = findViewById(R.id.title_explain)

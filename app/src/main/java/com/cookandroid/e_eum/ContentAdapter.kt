@@ -7,28 +7,29 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ContentAdapter(private val contentList:ArrayList<Content>) : RecyclerView.Adapter<ContentAdapter.ContentViewHolder>() {
+class ContentAdapter(private val contentList: ArrayList<Content>) :
+    RecyclerView.Adapter<ContentAdapter.ContentViewHolder>() {
 
-    var onItemClick : ((Content) -> Unit)? = null
+    var onItemClick: ((Content) -> Unit)? = null
 
-    class ContentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val imageView : ImageView = itemView.findViewById(R.id.imageView)
-        val textView : TextView = itemView.findViewById(R.id.textView)
+    class ContentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imageView: ImageView = itemView.findViewById(R.id.imageView)
+        val textView: TextView = itemView.findViewById(R.id.textView)
 
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.each_item,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.each_item, parent, false)
         return ContentViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ContentViewHolder, position: Int) {
-       val content = contentList[position]
+        val content = contentList[position]
         holder.imageView.setImageResource(content.image)
         holder.textView.text = content.name
 
-        holder.itemView.setOnClickListener{
+        holder.itemView.setOnClickListener {
             onItemClick?.invoke(content)
 
         }

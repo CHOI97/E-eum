@@ -7,18 +7,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class DetailedAdapter(private val detailedList : ArrayList<Detailed>) :
+class DetailedAdapter(private val detailedList: ArrayList<Detailed>) :
     RecyclerView.Adapter<DetailedAdapter.DetailedViewHolder>() {
 
-    private lateinit var mListener : onItemClickListener
+    private lateinit var mListener: onItemClickListener
 
-    interface  onItemClickListener{
+    interface onItemClickListener {
 
         fun onItemClickListener(position: Int)
 
     }
 
-    fun setOnItemClickListener(listener: onItemClickListener){
+    fun setOnItemClickListener(listener: onItemClickListener) {
 
         mListener = listener
 
@@ -26,13 +26,13 @@ class DetailedAdapter(private val detailedList : ArrayList<Detailed>) :
     }
 
 
+    class DetailedViewHolder(itemView: View, listener: onItemClickListener) :
+        RecyclerView.ViewHolder(itemView) {
 
-    class DetailedViewHolder(itemView : View, listener: onItemClickListener) : RecyclerView.ViewHolder(itemView){
-
-        val detailedImage : ImageView = itemView.findViewById(R.id.detailedImage)
+        val detailedImage: ImageView = itemView.findViewById(R.id.detailedImage)
         val detailedText: TextView = itemView.findViewById(R.id.detailedText)
 
-        init{
+        init {
 
             itemView.setOnClickListener {
 
@@ -45,8 +45,9 @@ class DetailedAdapter(private val detailedList : ArrayList<Detailed>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailedViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.detailed_item,parent,false)
-        return DetailedViewHolder(view,mListener)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.detailed_item, parent, false)
+        return DetailedViewHolder(view, mListener)
     }
 
     override fun onBindViewHolder(holder: DetailedViewHolder, position: Int) {

@@ -1,4 +1,4 @@
-package com.cookandroid.e_eum
+package com.cookandroid.e_eum.Activity
 
 //import android.content.Intent
 import android.content.Intent
@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         }
         //사전
         viewbinding.homeBtnDic.setOnClickListener{
-            intent = Intent(this, NewsActivity::class.java)
+            intent = Intent(this, DicActivitiy::class.java)
             startActivity(intent)
         }
         //오늘

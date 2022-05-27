@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg_main"
-    tools:context=".HomeActivity"
+    tools:context=".Activity.HomeActivity"
     android:gravity="center">
 
 

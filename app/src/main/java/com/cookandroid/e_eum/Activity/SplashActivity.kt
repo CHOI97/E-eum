@@ -1,9 +1,10 @@
-package com.cookandroid.e_eum
+package com.cookandroid.e_eum.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.cookandroid.e_eum.R
 
 class SplashActivity : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class SplashActivity : AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
             finish()
-        },DURATION)
+        }, DURATION)
 
     }
     companion object {

@@ -27,14 +27,15 @@
             android:name=".DetailedMainActivity"
             android:exported="true" />
         <activity
-            android:name=".NewsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".TodayActivity"
+            android:name=".Activity.DicActivitiy"
             android:exported="true" />
 
         <activity
-            android:name=".HomeActivity"
+            android:name=".NewsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
