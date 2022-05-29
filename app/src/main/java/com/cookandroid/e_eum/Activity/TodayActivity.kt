@@ -10,6 +10,5 @@ class TodayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewbinding = ActivityTodayResultBinding.inflate(layoutInflater)
         setContentView(viewbinding.root)
-
     }
 }

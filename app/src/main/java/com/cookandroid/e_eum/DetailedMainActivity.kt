@@ -5,20 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cookandroid.e_eum.databinding.ActivityDetailMainBinding
 
 class DetailedMainActivity : AppCompatActivity() {
 
     private  lateinit var  newRecyclerView: RecyclerView
     private lateinit var  newArrayList: ArrayList<Detailed>
-     lateinit var imageId : Array<Int>
-     lateinit var heading : Array<String>
-     lateinit var explain : Array<String>
+    private lateinit var viewbinding : ActivityDetailMainBinding
+
+    lateinit var imageId : Array<Int>
+    lateinit var heading : Array<String>
+    lateinit var explain : Array<String>
     lateinit var imageId2 : Array<Int>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.detailed_main)
+        viewbinding = ActivityDetailMainBinding.inflate(layoutInflater)
 
         imageId = arrayOf(R.drawable.video,
             R.drawable.video2,

@@ -36,6 +36,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/btn_daily_event"
                 android:background="#ffffff"
+                android:id="@+id/btn_dic_daily"
                 ></ImageButton>
             <ImageButton
                 android:layout_width="350dp"
@@ -43,6 +44,7 @@
                 android:layout_marginTop="30dp"
                 android:src="@drawable/btn_special_event"
                 android:background="#ffffff"
+                android:id="@+id/btn_dic_special"
                 ></ImageButton>
         </LinearLayout>
     </ScrollView>

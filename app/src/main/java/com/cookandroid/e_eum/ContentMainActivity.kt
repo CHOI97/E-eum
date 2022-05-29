@@ -3,20 +3,22 @@ package com.cookandroid.e_eum
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cookandroid.e_eum.databinding.ActivityContentMainBinding
+
 //사전
 class ContentMainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private  lateinit var contentList: ArrayList<Content>
     private lateinit var contentAdapter: ContentAdapter
-
+    private lateinit var viewbinding: ActivityContentMainBinding
+    private lateinit var tempintent : Intent
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.each_main)
-
-
+        viewbinding  = ActivityContentMainBinding.inflate(layoutInflater)
         init()
     }
 
@@ -24,10 +26,10 @@ class ContentMainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = GridLayoutManager(this,2)
-
         contentList = ArrayList()
-        addDataToList(2)
-
+        tempintent = intent
+        addDataToList(tempintent.getStringExtra("category"))
+        Log.d("tempintent",tempintent.getStringExtra("category").toString())
 
 
         contentAdapter = ContentAdapter(contentList)
@@ -43,8 +45,8 @@ class ContentMainActivity : AppCompatActivity() {
     }
 
 
-    private fun addDataToList(value: Int) {
-        if(value==2)
+    private fun addDataToList(value: String?) {
+        if(value=="CTE")
         { contentList.add(Content(R.drawable.person, "인간"))
        contentList.add(Content(R.drawable.life, "삶"))
         contentList.add(Content(R.drawable.food, "식생활"))
@@ -62,7 +64,7 @@ class ContentMainActivity : AppCompatActivity() {
         contentList.add(Content(R.drawable.notion, "개념"))
         contentList.add(Content(R.drawable.els, "기타"))}
 
-        if(value==3)
+        if(value == "SPE")
         {contentList.add(Content(R.drawable.person, "법률"))
         contentList.add(Content(R.drawable.life, "교통"))
         contentList.add(Content(R.drawable.food, "의학"))
