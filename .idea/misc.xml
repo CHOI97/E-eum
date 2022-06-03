@@ -15,10 +15,12 @@
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.257" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/Home_main.xml" value="0.1466565349544073" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activitiy_main.xml" value="0.2640625" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_content_main.xml" value="0.4625" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_detail_main.xml" value="0.4625" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic.xml" value="0.2828125" />
-        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic_main.xml" value="0.2828125" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic_main.xml" value="0.33" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_dic_result.xml" value="0.2828125" />
-        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_home_ex.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_news.xml" value="0.2828125" />

@@ -3,28 +3,33 @@ package com.cookandroid.e_eum
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Room
+import com.cookandroid.e_eum.DBMS.AppDatabase
 import com.cookandroid.e_eum.databinding.ActivityDetailMainBinding
+import java.io.File
 
 class DetailedMainActivity : AppCompatActivity() {
 
-    private  lateinit var  newRecyclerView: RecyclerView
-    private lateinit var  newArrayList: ArrayList<Detailed>
-    private lateinit var viewbinding : ActivityDetailMainBinding
-
-    lateinit var imageId : Array<Int>
-    lateinit var heading : Array<String>
-    lateinit var explain : Array<String>
-    lateinit var imageId2 : Array<Int>
+    //    private  lateinit var  newRecyclerView: RecyclerView
+    private lateinit var newArrayList: ArrayList<Detailed>
+    private lateinit var viewbinding: ActivityDetailMainBinding
+    lateinit var db: AppDatabase
+    lateinit var imageId: Array<Int>
+    lateinit var heading: Array<String>
+    lateinit var explain: Array<String>
+    lateinit var imageId2: Array<Int>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewbinding = ActivityDetailMainBinding.inflate(layoutInflater)
+        val db = AppDatabase.getInstance(applicationContext)
 
-        imageId = arrayOf(R.drawable.video,
-            R.drawable.video2,
+
+        viewbinding = ActivityDetailMainBinding.inflate(layoutInflater)
+        setContentView(viewbinding.root)
+        imageId = arrayOf(
             R.drawable.video,
             R.drawable.video2,
             R.drawable.video,
@@ -32,7 +37,10 @@ class DetailedMainActivity : AppCompatActivity() {
             R.drawable.video,
             R.drawable.video2,
             R.drawable.video,
-            R.drawable.video2,)
+            R.drawable.video2,
+            R.drawable.video,
+            R.drawable.video2,
+        )
 
 
 
@@ -50,7 +58,7 @@ class DetailedMainActivity : AppCompatActivity() {
         )
 
         explain = arrayOf(
-           getString(R.string.explain_a),
+            getString(R.string.explain_a),
             getString(R.string.explain_b),
             getString(R.string.explain_c),
             getString(R.string.explain_d),
@@ -61,9 +69,10 @@ class DetailedMainActivity : AppCompatActivity() {
             getString(R.string.explain_i),
             getString(R.string.explain_j),
 
-        )
+            )
 
-        imageId2 = arrayOf(R.drawable.picture,
+        imageId2 = arrayOf(
+            R.drawable.picture,
             R.drawable.picture2,
             R.drawable.picture3,
             R.drawable.picture4,
@@ -72,21 +81,21 @@ class DetailedMainActivity : AppCompatActivity() {
             R.drawable.picture7,
             R.drawable.picture8,
             R.drawable.picture9,
-            R.drawable.picture10,)
+            R.drawable.picture10,
+        )
 
 
-        newRecyclerView = findViewById(R.id.detailed_recyclerView)
-        newRecyclerView.layoutManager = LinearLayoutManager(this)
-        newRecyclerView.setHasFixedSize(true)
+        viewbinding.detailedRecyclerView.layoutManager = LinearLayoutManager(this)
+        viewbinding.detailedRecyclerView.setHasFixedSize(true)
 
         newArrayList = arrayListOf<Detailed>()
         getUserdata()
 
-        }
+    }
 
-        private fun getUserdata(){
+    private fun getUserdata() {
 
-        for(i in imageId.indices){
+        for (i in imageId.indices) {
 
             val detailed = Detailed(imageId[i], heading[i])
             newArrayList.add(detailed)
@@ -94,27 +103,25 @@ class DetailedMainActivity : AppCompatActivity() {
         }
 
         val adapter = DetailedAdapter(newArrayList)
-        newRecyclerView.adapter = adapter
-       adapter.setOnItemClickListener(object : DetailedAdapter.onItemClickListener{
-           override fun onItemClickListener(position: Int) {
+        viewbinding.detailedRecyclerView.adapter = adapter
+        adapter.setOnItemClickListener(object : DetailedAdapter.onItemClickListener {
+            override fun onItemClickListener(position: Int) {
 
-              // Toast.makeText(this@DetailedMainActivity,"Click no. $position", Toast.LENGTH_SHORT).show()i
+                // Toast.makeText(this@DetailedMainActivity,"Click no. $position", Toast.LENGTH_SHORT).show()i
 
-               val intent = Intent(this@DetailedMainActivity, VideoActivity::class.java)
+                val intent = Intent(this@DetailedMainActivity, VideoActivity::class.java)
                 intent.putExtra("heading", newArrayList[position].heading)
-               intent.putExtra("imageId", newArrayList[position].titleImage)
-               intent.putExtra("explainId", explain[position])
-               intent.putExtra("imageId2", imageId2[position])
-               startActivity(intent)
+                intent.putExtra("imageId", newArrayList[position].titleImage)
+                intent.putExtra("explainId", explain[position])
+                intent.putExtra("imageId2", imageId2[position])
+                startActivity(intent)
 
 
-           }
+            }
 
 
-
-       })
-
+        })
 
 
-        }
     }
+}

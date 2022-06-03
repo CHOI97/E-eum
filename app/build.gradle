@@ -2,9 +2,9 @@ plugins {
     id 'com.android.application'
 }
 apply plugin: 'kotlin-android'
-
+apply plugin: 'kotlin-kapt'
 android {
-    compileSdk 31
+    compileSdk 32
     buildFeatures {
         viewBinding true
     }
@@ -65,6 +65,18 @@ dependencies {
     implementation "androidx.camera:camera-extensions:${camerax_version}"
 //tensorflow lite
     implementation 'org.tensorflow:tensorflow-lite:+'
+
+
+//Database
+    def roomVersion = "2.4.2"
+//    def room_version = "2.4.2"
+    // Room components
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:2.4.0")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+
+    //annotationProcessor to kapt
+    kapt("androidx.room:room-compiler:2.4.0")
 }
 repositories {
 }
