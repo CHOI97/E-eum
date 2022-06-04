@@ -24,6 +24,9 @@
         android:theme="@style/Theme.Eeum"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.TodayActivity"
+            android:exported="true" />
+        <activity
             android:name=".ContentMainActivity"
             android:exported="true" />
         <activity
@@ -32,7 +35,10 @@
         <activity
             android:name=".Activity.DicActivitiy"
             android:exported="true" />
-
+        <activity
+            android:name=".VideoActivity"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".NewsActivity"
             android:exported="true" />

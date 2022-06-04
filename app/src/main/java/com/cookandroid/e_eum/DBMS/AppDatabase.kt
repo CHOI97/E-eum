@@ -18,8 +18,8 @@ abstract class AppDatabase : RoomDatabase() {
         fun getInstance(context: Context): AppDatabase? {
             if (instance == null) {
                 synchronized(AppDatabase::class) {
-                    instance = Room.databaseBuilder(context, AppDatabase::class.java, "Sample.db")
-                        .createFromAsset("database/sign.db")
+                    instance = Room.databaseBuilder(context, AppDatabase::class.java, "KSL.db")
+                        .createFromAsset("databases/new_ksl.db")
                         .build()
                     Log.d("success","true")
                 }

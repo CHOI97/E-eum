@@ -31,14 +31,15 @@
         android:layout_height="400dp"
         android:gravity="center"
         android:orientation="vertical">
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="150dp"
-            android:background="#ffffff"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/img_video"
-
-            ></ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <VideoView
+            android:id="@+id/today_video"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="350dp"
@@ -51,11 +52,11 @@
             android:textColor="#E9A2A2"
             ></TextView>
         <TextView
+            android:id="@+id/today_maen"
             android:layout_width="350dp"
             android:layout_height="25dp"
             android:background="#ffffff"
             android:layout_marginTop="10dp"
-            android:text="안녕하세요,안녕하십니까,안녕히 가십시오,안녕히 계세요"
             android:textSize="20dp"
             android:autoSizeTextType="uniform"
             android:textColor="#000000"
@@ -71,42 +72,16 @@
             android:textColor="#E9A2A2"
             ></TextView>
         <TextView
+            android:id="@+id/todat_explain"
             android:layout_width="350dp"
             android:layout_height="130dp"
             android:background="#ffffff"
             android:layout_marginTop="10dp"
-            android:text="오른 손바닥으로 주먹을 쥔 왼 팔을 쓸어내린 다음, 두 주먹을 쥐고 바닥이 아래로 향하게하여 가슴 앞에서 아래로 내린다."
             android:autoSizeTextType="uniform"
             android:autoSizeMaxTextSize="20dp"
             android:textColor="#000000"
             ></TextView>
     </LinearLayout>
     </ScrollView>
-<!--    <View-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="1dp"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:background="#C1BFBF"/>-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:gravity="center"-->
-<!--        >-->
-
-<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--            app:itemIconSize="120px"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:id="@+id/bottom_menu"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="#ffffff"-->
-<!--            app:itemIconTint="@menu/menu_selector_color"-->
-<!--            app:itemTextColor="@menu/menu_selector_color"-->
-<!--            app:labelVisibilityMode="selected"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            app:menu="@menu/bottom_menu"/>-->
-
-<!--    </LinearLayout>-->
 
 </LinearLayout>

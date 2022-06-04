@@ -38,7 +38,7 @@ class ContentMainActivity : AppCompatActivity() {
 
         contentAdapter.onItemClick = {
             val intent = Intent(this, DetailedMainActivity::class.java)
-            intent.putExtra("content", it)
+            intent.putExtra("content", it.code)
             startActivity(intent)
 
         }

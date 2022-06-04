@@ -10,5 +10,6 @@ data class KSL(
     @PrimaryKey var origin_no: String,
 //ColumnInfo
     @ColumnInfo var category: String,
-    @ColumnInfo var mean: String)
+    @ColumnInfo var mean: String,
+    @ColumnInfo var img_src: String)
 
