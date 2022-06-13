@@ -13,6 +13,7 @@
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/drawable-v24/ic_baseline_public_24.xml" value="0.2475" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.257" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.257" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/drawable-v24/person.xml" value="0.3565" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/Home_main.xml" value="0.1466565349544073" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activitiy_main.xml" value="0.2640625" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_content_main.xml" value="0.4625" />
@@ -29,10 +30,11 @@
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_title.xml" value="0.2828125" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_today.xml" value="0.2828125" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_today_result.xml" value="0.2828125" />
-        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_trans_result.xml" value="0.25" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_trans_main.xml" value="0.25" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_trans_result.xml" value="0.33" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/activity_video.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/ca.xml" value="0.3015625" />
-        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/camera_main.xml" value="0.1" />
+        <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/camera_main.xml" value="0.15" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/detailed_item.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/detailed_main.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/chlwj/AndroidStudioProjects/Eeum/app/src/main/res/layout/dic_main.xml" value="0.2554347826086957" />

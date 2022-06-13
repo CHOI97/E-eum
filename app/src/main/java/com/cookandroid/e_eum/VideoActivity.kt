@@ -69,6 +69,7 @@ class VideoActivity : AppCompatActivity() {
                 viewbinding.signExplain.setText(mean)
                 viewbinding.signMean.setText(title)
                 Glide.with(applicationContext).load(Image).into(viewbinding.signImage)
+                Log.d("test",Image);
                 VIDEO_path = VIDEO_path.replace("215X161.jpg", "700X466.mp4")
                 viewbinding.videoviewId.setVideoPath(VIDEO_path)
                 viewbinding.videoviewId.setMediaController(mediaController)

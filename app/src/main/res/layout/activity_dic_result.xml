@@ -65,7 +65,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="50dp"
-                        android:src="@drawable/picture"
                         app:layout_constraintStart_toEndOf="@id/title_image" />
 
 

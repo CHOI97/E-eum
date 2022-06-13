@@ -67,10 +67,18 @@ dependencies {
 //tensorflow lite
     implementation 'org.tensorflow:tensorflow-lite:+'
 
+//Mediapipe
+    // MediaPipe solution-core is the foundation of any MediaPipe Solutions.
+    implementation 'com.google.mediapipe:solution-core:latest.release'
+    // Optional: MediaPipe Face Detection Solution.
+    implementation 'com.google.mediapipe:facedetection:latest.release'
+    // Optional: MediaPipe Face Mesh Solution.
+    implementation 'com.google.mediapipe:facemesh:latest.release'
+    // Optional: MediaPipe Hands Solution.
+    implementation 'com.google.mediapipe:hands:latest.release'
 
 //Database
     def roomVersion = "2.4.2"
-//    def room_version = "2.4.2"
     // Room components
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:2.4.0")
@@ -81,6 +89,9 @@ dependencies {
 
 //Crowl Jsoup
     implementation("org.jsoup:jsoup:1.14.1")
+
+//    OpenCV
+    implementation project(":sdk")
 }
 repositories {
 }

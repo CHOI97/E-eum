@@ -19,6 +19,8 @@ class HomeActivity : AppCompatActivity() {
         //번역
         viewbinding.homeBtnTrans.setOnClickListener{
             //번역
+            intent = Intent(this, TransActivity::class.java)
+            startActivity(intent)
         }
         //사전
         viewbinding.homeBtnDic.setOnClickListener{
